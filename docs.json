@@ -8,7 +8,10 @@
     "light": "#26BD6C",
     "dark": "#166E3F"
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/images/favicon.png",
+    "dark": "/favicon.ico"
+  },
   "icons": {
     "library": "lucide"
   },
@@ -98,8 +101,9 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/favicon.png",
+    "dark": "/images/favicon.png",
+    "href": "https://asentado.io/"
   },
   "navbar": {
     "links": [],
