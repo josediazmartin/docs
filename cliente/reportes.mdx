@@ -1,0 +1,57 @@
+---
+title: Reporte de formulario (PDF)
+sidebarTitle: Reportes
+description: Cuando el prevencionista completa un formulario en obra, vos generás el PDF entregable y lo compartís con el cliente.
+---
+
+Cuando el prevencionista completa un formulario en obra, queda como **borrador** o **completado** en la cola operativa. Vos generás el PDF y lo compartís con el cliente.
+
+## Flujo normal
+
+El prevencionista ya cerró el formulario desde la app.
+
+<Steps>
+  <Step title="Abrí la cola de formularios">
+    En el sidebar del cliente, andá a **Visitas → Formularios**. La cola te muestra los formularios completados pendientes de reportar (en estado verde, "Listo para PDF").
+  </Step>
+  <Step title="Abrí el formulario">
+    Hacé clic en la fila del formulario (FORM-XXXX). Se abre el panel de generación.
+  </Step>
+  <Step title="Revisá y completá">
+    - **Datos de la visita** (lugar, fecha, horario, asesor) — editables.
+    - **Respuestas del formulario** — de solo lectura (las cerró el prevencionista).
+    - **Observaciones de cierre** — pre-cargadas con los hallazgos del día.
+    - **Firmas** — dibujá la firma del asesor y la del responsable del cliente (cada una con su nombre y aclaración).
+    - **Nombre del archivo** y checkbox **Compartir con cliente**.
+  </Step>
+  <Step title="Generá el PDF">
+    Hacé clic en **Generar PDF**. Queda guardado en **Documentación → Constancias** y, si activaste "Compartir", aparece también en el panel del cliente.
+  </Step>
+</Steps>
+
+## Flujo excepcional
+
+El prevencionista nunca abrió el formulario.
+
+<Steps>
+  <Step title="Buscá el formulario en la cola">
+    Va a aparecer como **Borrador del prev**, o puede ni existir si el prevencionista no abrió nada.
+  </Step>
+  <Step title="Completalo vos desde la web">
+    Llená las respuestas a mano. Asentado registra que cerraste vos por el prevencionista (queda marcado como **Cerrado por admin**).
+  </Step>
+  <Step title="Generá el PDF">
+    Generá el PDF normalmente.
+  </Step>
+</Steps>
+
+## Regenerar o anular
+
+<AccordionGroup>
+  <Accordion title="Regenerar" icon="rotate-cw">
+    Si hay que corregir datos o firmas, abrí el reporte de nuevo, cambiá lo que necesites y volvé a generar. Sobrescribe el PDF anterior.
+  </Accordion>
+  <Accordion title="Anular" icon="ban">
+    Si el formulario se creó por error, hacé clic en el menú **⋯** del reporte y elegí **Anular**. Ingresá el motivo. Queda registrado, pero ya no se considera entregable.
+  </Accordion>
+</AccordionGroup>

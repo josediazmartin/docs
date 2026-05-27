@@ -1,33 +1,59 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
 > For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+> install the Mintlify skill: `npx skills add https://github.com/mintlify/docs --skill mintlify`
 
-# Documentation project instructions
+# Centro de ayuda de Asentado — instrucciones del proyecto
 
-## About this project
+## Sobre este proyecto
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+- Es el centro de ayuda de **Asentado**, la plataforma de gestión de Higiene y Seguridad para consultoras.
+- Sitio de documentación construido sobre [Mintlify](https://mintlify.com).
+- Las páginas son archivos MDX con frontmatter YAML. La configuración vive en `docs.json`.
+- Corré `mint dev` para previsualizar localmente y `mint broken-links` para chequear enlaces.
 
-## Terminology
+## Alcance del help
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- **Solo** usuarios de la consultora: el admin (panel web) y el prevencionista (app móvil).
+- El sitio está en **español rioplatense**. Se permite y se prefiere el voseo.
 
-## Style preferences
+## Terminología
 
-{/* Add any project-specific style rules below */}
+Usá siempre estos términos. La columna "No usar" lista alternativas a evitar.
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+| Término | No usar |
+|---|---|
+| Consultora | partner, organización |
+| Cliente | empresa vinculada |
+| Obra | espacio, sitio, proyecto |
+| Prevencionista | técnico, preventista |
+| Visita | fichaje |
+| Formulario | plantilla, constancia template |
+| Reporte de formulario | constancia |
+| Hallazgo | observación, no conformidad |
+| Cuasi accidente | casi accidente, near miss |
+| Ticket | tarea, pendiente |
+| Ticketera | — |
+| Documentación | documentos, carpeta |
+| Vencimientos | alertas |
+| Recurso | — |
+| Planificación | gantt |
 
-## Content boundaries
+## Preferencias de estilo
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Tono cercano y directo. Verbos en imperativo voseante: "Tocá", "Hacé clic", "Ingresá".
+- Voz activa y segunda persona ("vos").
+- Frases concisas: una idea por oración.
+- Una acción por paso. Usá el componente `<Steps>` para los procedimientos numerados.
+- Títulos en sentence case (mayúscula solo en la primera palabra).
+- Negrita para elementos de UI: hacé clic en **Configuración**.
+- Formato de código para nombres de archivo, comandos, rutas, valores literales (`1234`, `DD/MM/AAAA`, `tecnico`) y rutas de la app (`/partner/empresa/<slug>`).
+- Nunca uses jerga interna: no menciones "RLS", "shadow", "policies", "migraciones" ni "Supabase".
+
+## Límites de contenido
+
+No documentar:
+
+- Flujos del **admin de la empresa cliente** (tienen su propio help aparte).
+- Setup técnico (Supabase, RLS, migraciones, triggers).
+- Configuración super-admin de Asentado.
+- Edge cases técnicos (rate limits, etc.).
+- Las features premium gateadas solo se mencionan al pasar ("si tu cliente tiene contratado el módulo X"), nunca se documentan en detalle.

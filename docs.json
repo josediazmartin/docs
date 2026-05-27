@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "name": "Asentado",
+  "description": "Centro de ayuda de Asentado para consultoras de Higiene y Seguridad: guías paso a paso para el panel web y la app del prevencionista.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -16,62 +16,83 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": ["copy", "view", "assistant"]
   },
   "navigation": {
     "global": {
       "anchors": [
         {
-          "anchor": "Home",
+          "anchor": "Inicio",
           "icon": "house",
           "href": "/"
         },
         {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
+          "anchor": "Ir a Asentado",
+          "icon": "external-link",
+          "href": "https://app.asentado.io"
         }
       ]
     },
     "directory": "card",
     "groups": [
       {
-        "group": "Platform",
-        "icon": "layers",
+        "group": "Empezar",
+        "icon": "rocket",
         "expanded": true,
         "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
+          "index",
+          "empezar/dos-paneles",
+          "empezar/glosario"
         ]
       },
       {
-        "group": "Analytics",
-        "icon": "chart-bar",
+        "group": "Panel de la consultora",
+        "icon": "building-2",
         "expanded": true,
         "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
+          "consultora/iniciar-sesion",
+          "consultora/oficinas",
+          "consultora/prevencionistas",
+          "consultora/maquinaria",
+          "consultora/planificacion",
+          "consultora/formularios",
+          "consultora/miembros-y-configuracion"
         ]
       },
       {
-        "group": "Integrations",
-        "icon": "plug",
+        "group": "Panel del cliente",
+        "icon": "briefcase",
         "expanded": true,
         "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
+          "cliente/vincular",
+          "cliente/obras",
+          "cliente/ticketera",
+          "cliente/reportes",
+          "cliente/hallazgos",
+          "cliente/cuasi-accidentes",
+          "cliente/documentacion",
+          "cliente/notificaciones",
+          "cliente/capacitaciones"
+        ]
+      },
+      {
+        "group": "App del prevencionista",
+        "icon": "smartphone",
+        "expanded": true,
+        "pages": [
+          "app/primeros-pasos",
+          "app/visitas-y-formularios",
+          "app/hallazgos",
+          "app/tickets",
+          "app/offline"
+        ]
+      },
+      {
+        "group": "Ayuda",
+        "icon": "circle-help",
+        "expanded": true,
+        "pages": [
+          "preguntas-frecuentes"
         ]
       }
     ]
@@ -84,14 +105,21 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Ir a Asentado",
+      "href": "https://app.asentado.io"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
-    }
+    "links": [
+      {
+        "header": "Asentado",
+        "items": [
+          {
+            "label": "Ir a la app",
+            "href": "https://app.asentado.io"
+          }
+        ]
+      }
+    ]
   }
 }
