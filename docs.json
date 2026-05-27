@@ -101,8 +101,8 @@
     ]
   },
   "logo": {
-    "light": "/images/favicon.png",
-    "dark": "/images/favicon.png",
+    "light": "/favicon.ico",
+    "dark": "/favicon.ico",
     "href": "https://asentado.io/"
   },
   "navbar": {
