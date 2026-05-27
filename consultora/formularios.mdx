@@ -1,0 +1,74 @@
+---
+title: Crear un formulario
+sidebarTitle: Formularios
+description: Los formularios viven en el catálogo de tu consultora y se asignan después a las obras de tus clientes.
+---
+
+Los formularios viven en el catálogo de tu consultora y se asignan después a las obras de los clientes. Una vez creado, podés reusar un formulario en todos los clientes y obras que quieras.
+
+Hay dos formas de crear un formulario: importarlo desde un documento que ya tenés, o crearlo desde cero.
+
+<Tabs>
+  <Tab title="Importar desde un documento">
+    <Steps>
+      <Step title="Abrí Formularios">
+        En el sidebar, hacé clic en **Mi consultora → Formularios** (o, desde el panel de un cliente, en **Plantillas → Formularios**).
+      </Step>
+      <Step title="Importá">
+        Hacé clic en **Importar formulario** y elegí la fuente:
+
+        - **PDF** — subí el template del cliente (hasta 10 MB).
+        - **Foto del papel** — sacale una foto a la planilla en papel (Asentado ignora manchas y anotaciones a mano).
+        - **Excel** — subí el `.xlsx` (Asentado lo convierte automáticamente).
+      </Step>
+      <Step title="Esperá el procesamiento">
+        Asentado lo procesa con inteligencia artificial (tarda unos segundos) y te muestra una **previsualización editable**.
+      </Step>
+      <Step title="Revisá la previsualización">
+        - Las secciones detectadas.
+        - El tipo de cada campo (texto, número, opción, sí/no, foto, firma, instrucción).
+        - Las opciones de los campos tipo "opción".
+        - Marcá el campo de **observaciones / breve descripción** para que se autocomplete con los hallazgos del día al generar el PDF.
+      </Step>
+      <Step title="Guardá">
+        Hacé clic en **Guardar formulario**.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Crear desde cero">
+    <Steps>
+      <Step title="Creá un formulario nuevo">
+        En **Formularios**, hacé clic en **+ Nuevo formulario**.
+      </Step>
+      <Step title="Ponele nombre">
+        Ingresá el **nombre** (por ejemplo, "Constancia de Visita en Obra").
+      </Step>
+      <Step title="Agregá los items">
+        Agregá items uno por uno con el botón **+ Botón**:
+
+        - **Confirmación** (tap) — para usarlo como encabezado de sección.
+        - **Texto** — campo de texto libre.
+        - **Número** — campo numérico.
+        - **Opción** — múltiple choice (definí las opciones).
+        - **Sí/No** — booleano.
+        - **Foto** — captura de imagen.
+        - **Firma** — firma dibujada al cierre.
+        - **Instrucción** — bloque de solo lectura con texto e imagen opcional, para explicarle al prevencionista qué tiene que mirar.
+      </Step>
+      <Step title="Configurá el no cumplimiento (opcional)">
+        Para los campos tipo **Opción**, podés configurar una **respuesta de no cumplimiento**:
+
+        - Marcá qué valor significa "no cumple".
+        - Activá **Exigir foto si responde así** o **Exigir hallazgo**.
+        - El prevencionista no va a poder cerrar el formulario sin esa evidencia.
+      </Step>
+      <Step title="Revisá la vista previa y guardá">
+        A la derecha tenés una vista previa en vivo, tal como lo va a ver el prevencionista. Cuando esté listo, hacé clic en **Guardar**.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Tip>
+  Una misma obra puede tener varios formularios asignados. Mirá cómo [asignar un formulario a una obra](/cliente/obras#asignar-un-formulario-a-una-obra).
+</Tip>
